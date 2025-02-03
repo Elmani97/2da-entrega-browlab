@@ -468,8 +468,11 @@ margin: 1rem;
         width: 10rem !important;
     
     }
-     
+     .contacto {
+        flex-direction: column;
+     }
 }
+
 
 
 /* Media Query para teléfonos (pantallas de hasta 576px) */
@@ -593,7 +596,8 @@ margin: 1rem;
         gap: 1rem;
         background-color: #2c3e50;
         color: white;
-        grid-column: 1/2; 
+        grid-column: 1/2;
+        flex-direction: column;
     }
     .logo{
         display: none;
