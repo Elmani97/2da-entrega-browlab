@@ -1,0 +1,184 @@
+
+
+.cuerpo--servicios {
+    display: grid;
+    grid-area: cuerpo;
+    background-color: #faf3f3;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+    .container_titulo {
+        display: flex;
+        flex-direction: column;
+        grid-row: 1/2;
+        align-items: center;
+        background-color: #e0f7fa;
+    }
+
+    .container_pasos{
+        display: flex;
+        flex-direction: column;
+        grid-row: 2/3;
+        align-items: center;
+        text-align: center;
+        
+    
+        .tarjetas_pasos{
+            display: flex;
+            grid-column: 1/2;
+            
+            .pasos{
+                width: 18rem
+            }
+
+            @include minimobile{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .container_pasos--dos {
+        display: flex;
+        flex-direction: column;
+        grid-row: 3/4;
+        align-items: center;
+        text-align: center;
+
+        .tarjetas_pasos--dos{
+            display: flex;
+            grid-column: 1/2;
+
+
+            .pasos--precios{
+                width: 18rem;
+
+                @include tablet{
+                    width: 13rem;
+                    
+                }
+
+                @include mobile{
+                    width: 100%;
+                    
+                }
+
+                
+               
+                
+                
+            }
+            
+
+            .pasos1 {
+                background-color: #faf3f3;
+                height: 14rem;
+                box-shadow: 0.1rem 0.1rem #504d4d;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 0.5rem;
+                flex-direction: column;
+
+            
+                    button {
+                    background-color: #e58f9c;
+                    color: rgb(248, 244, 244);
+                    border: solid #756d6d 0.1rem;
+                    border-radius: 0.3rem;
+                    width: 10rem;
+                    height: 3rem;
+                    font-size: 1.2rem;
+                    }
+
+                    @include mobile {
+                    display: flex;
+                    text-align: center;
+                    width: 100% !important;
+                    height: auto !important;
+                    }
+
+                    @include tablet{
+                        width: auto;
+                        height: auto;
+                    }
+        
+            }
+
+            @include tablet{
+                grid-column: 1/2;
+
+            }
+
+            @include mobile{
+                flex-direction: column;
+                
+            }
+
+            
+        }
+        @include tablet {
+            width: auto;
+            height: auto;
+        }
+
+        
+    }
+
+
+    @include tablet {
+         
+        display: flex;  
+        grid-area: cuerpo;  
+        background-color: #faf3f3;  
+        flex-direction: column;  
+        align-items: center;  
+        justify-content: center;  
+        text-align: center;
+
+            .pasos{
+                width: 33.3% !important;
+            }
+                              
+    }
+
+    @include mobile {
+        display: flex;  
+        grid-area: cuerpo;  
+        background-color: #faf3f3;  
+        flex-direction: column;  
+        align-items: center;  
+        justify-content: center;  
+        text-align: center;  
+
+        .pasos{
+            width: 33.3% !important;
+            height: auto !important;
+        }
+
+        .precios {
+            width: 33.3% !important;
+            height: auto !important;
+        }
+
+    }
+
+    @include minimobile{
+        display: flex;  
+        grid-area: cuerpo;  
+        background-color: #faf3f3;  
+        flex-direction: column;  
+        align-items: center;  
+        justify-content: center;  
+        text-align: center;  
+
+        .pasos{
+            width: 100% !important;
+            height: auto !important;
+         }
+                                  
+        } 
+}
+
+

@@ -1,0 +1,632 @@
+/*RESET*/
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*utlilities*/
+/* LAYOUT */
+/*contacto index*/
+.contacto {
+  display: flex;
+  background-color: #2c3e50;
+  color: white;
+  flex-direction: column;
+  grid-column: 1/4;
+  align-items: start;
+  margin-top: 0.2rem;
+}
+
+.cuerpo {
+  display: grid;
+  grid-area: cuerpo;
+  background-color: #faf3f3;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 0.3fr auto 1fr;
+}
+.cuerpo .reserva {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/3;
+  margin: 0.3rem;
+}
+.cuerpo .reserva .reserva__boton {
+  background-color: #e58f9c;
+  color: white;
+  border: solid #756d6d 0.1rem;
+  border-radius: 0.3rem;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.2rem;
+}
+.cuerpo .reserva .reserva__boton:hover {
+  background-color: #f10f80;
+  transform: scale(1.05);
+}
+.cuerpo .titulo_servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/3;
+}
+.cuerpo .imagenes_servicios {
+  display: flex;
+  justify-content: center;
+  grid-column: 1/3;
+}
+.cuerpo .imagenes_servicios .cardservices {
+  width: 10rem;
+}
+.cuerpo .antes_despues {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+@media (max-width: 768px) {
+  .cuerpo .card-group {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .cuerpo .card-group {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .cuerpo .card-group {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .cuerpo .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .cuerpo .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .cuerpo .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .cuerpo .card .card-img-top {
+    width: 8rem;
+  }
+}
+@media (max-width: 576px) {
+  .cuerpo .card .card-img-top {
+    width: 8rem;
+  }
+}
+@media (max-width: 480px) {
+  .cuerpo .card .card-img-top {
+    width: 8rem;
+  }
+}
+.cuerpo .testimonios {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  justify-content: end;
+}
+@media (max-width: 576px) {
+  .cuerpo .testimonios .testimonios__subtitulo {
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .cuerpo .testimonios .testimonios__subtitulo {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.cuerpo .testimonios .testimonios__parrafo {
+  font-style: italic;
+  color: #3f3b3b;
+}
+@media (max-width: 768px) {
+  .cuerpo .testimonios {
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .cuerpo {
+    display: flex;
+    grid-area: cuerpo;
+    background-color: #faf3f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .cuerpo {
+    display: flex;
+    grid-area: cuerpo;
+    background-color: #faf3f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .cuerpo {
+    display: flex;
+    grid-area: cuerpo;
+    background-color: #faf3f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.cabeza {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 0.4fr;
+  grid-template-rows: auto;
+  width: 100%;
+}
+.cabeza .logo {
+  display: flex;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+@media (max-width: 576px) {
+  .cabeza .logo {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .cabeza .logo {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.cabeza .logo .imagen_logo {
+  width: 8rem;
+}
+@media (max-width: 768px) {
+  .cabeza .logo {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.cabeza nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+}
+.cabeza nav .lista-navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.cabeza nav a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border: solid black 0.1rem;
+  padding: 0.5rem;
+  color: #03060f;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  margin: 1rem;
+}
+.cabeza nav:hover {
+  color: #f10f80;
+}
+@media (max-width: 768px) {
+  .cabeza {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .cabeza {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .cabeza {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.encabezado {
+  display: flex;
+  grid-area: encabezado;
+  background-color: #ff80ee;
+  grid-column: 1/4;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.padre_index {
+  display: grid;
+  background-color: #faf3f3;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto 1.5fr;
+  grid-template-areas: "encabezado encabezado encabezado" "cuerpo cuerpo cuerpo" "contacto contacto contacto";
+}
+@media (max-width: 768px) {
+  .padre_index {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: "encabezado" "cuerpo" "contacto";
+  }
+}
+@media (max-width: 576px) {
+  .padre_index {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: "encabezado" "cuerpo" "contacto";
+  }
+}
+@media (max-width: 480px) {
+  .padre_index .padre_index {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: "encabezado" "cuerpo" "contacto";
+  }
+}
+
+.cuerpo--nosotros {
+  display: grid;
+  grid-area: cuerpo;
+  background-color: #faf3f3;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  height: 100%;
+}
+.cuerpo--nosotros .container_secciones {
+  display: flex;
+  grid-row: 1/2;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cuerpo--nosotros .cont--filosofia {
+  display: flex;
+  grid-row: 2/3;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cuerpo--nosotros .cont--fotoequipo {
+  display: flex;
+  flex-direction: column;
+  grid-row: 3/4;
+  align-items: center;
+}
+.cuerpo--nosotros .cont--fotoequipo .imagenes_equipos {
+  display: flex;
+}
+.cuerpo--nosotros .cont--fotoequipo .imagenes_equipos .card-equipo {
+  width: 18rem;
+}
+@media (max-width: 768px) {
+  .cuerpo--nosotros .cont--fotoequipo .imagenes_equipos {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .cuerpo--nosotros .cont--fotoequipo {
+    width: 100%;
+  }
+}
+.cuerpo--nosotros .cont--beneficios {
+  display: flex;
+  grid-row: 4/5;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+}
+.cuerpo--nosotros .cont--beneficios .cont--beneficios ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.cuerpo--nosotros .cont--beneficios .cont--beneficios ul .cont--beneficios ul li {
+  margin: 1rem;
+}
+@media (max-width: 480px) {
+  .cuerpo--nosotros .cont--beneficios .cont--beneficios ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+}
+@media (max-width: 480px) {
+  .cuerpo--nosotros .cont--beneficios {
+    margin: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .cuerpo--nosotros {
+    display: flex;
+    grid-area: cuerpo;
+    background-color: #faf3f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .padre_index--sobre_nosotros {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "encabezado" "cuerpo" "contacto";
+  }
+}
+
+.cuerpo--servicios {
+  display: grid;
+  grid-area: cuerpo;
+  background-color: #faf3f3;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
+.cuerpo--servicios .container_titulo {
+  display: flex;
+  flex-direction: column;
+  grid-row: 1/2;
+  align-items: center;
+  background-color: #e0f7fa;
+}
+.cuerpo--servicios .container_pasos {
+  display: flex;
+  flex-direction: column;
+  grid-row: 2/3;
+  align-items: center;
+  text-align: center;
+}
+.cuerpo--servicios .container_pasos .tarjetas_pasos {
+  display: flex;
+  grid-column: 1/2;
+}
+.cuerpo--servicios .container_pasos .tarjetas_pasos .pasos {
+  width: 18rem;
+}
+@media (max-width: 480px) {
+  .cuerpo--servicios .container_pasos .tarjetas_pasos {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.cuerpo--servicios .container_pasos--dos {
+  display: flex;
+  flex-direction: column;
+  grid-row: 3/4;
+  align-items: center;
+  text-align: center;
+}
+.cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos {
+  display: flex;
+  grid-column: 1/2;
+}
+.cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos .pasos--precios {
+  width: 18rem;
+}
+@media (max-width: 768px) {
+  .cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos .pasos--precios {
+    width: 13rem;
+  }
+}
+@media (max-width: 576px) {
+  .cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos .pasos--precios {
+    width: 100%;
+  }
+}
+.cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos .pasos1 {
+  background-color: #faf3f3;
+  height: 14rem;
+  box-shadow: 0.1rem 0.1rem #504d4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+  flex-direction: column;
+}
+.cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos .pasos1 button {
+  background-color: #e58f9c;
+  color: rgb(248, 244, 244);
+  border: solid #756d6d 0.1rem;
+  border-radius: 0.3rem;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.2rem;
+}
+@media (max-width: 576px) {
+  .cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos .pasos1 {
+    display: flex;
+    text-align: center;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+@media (max-width: 768px) {
+  .cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos .pasos1 {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos {
+    grid-column: 1/2;
+  }
+}
+@media (max-width: 576px) {
+  .cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .cuerpo--servicios .container_pasos--dos {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .cuerpo--servicios {
+    display: flex;
+    grid-area: cuerpo;
+    background-color: #faf3f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .cuerpo--servicios .pasos {
+    width: 33.3% !important;
+  }
+}
+@media (max-width: 576px) {
+  .cuerpo--servicios {
+    display: flex;
+    grid-area: cuerpo;
+    background-color: #faf3f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .cuerpo--servicios .pasos {
+    width: 33.3% !important;
+    height: auto !important;
+  }
+  .cuerpo--servicios .precios {
+    width: 33.3% !important;
+    height: auto !important;
+  }
+}
+@media (max-width: 480px) {
+  .cuerpo--servicios {
+    display: flex;
+    grid-area: cuerpo;
+    background-color: #faf3f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .cuerpo--servicios .pasos {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/*hola*/
+@media (max-width: 768px) {
+  .padre_index--servicio {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "encabezado" "cuerpo" "contacto";
+  }
+}
+@media (max-width: 576px) {
+  .padre_index--servicio {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: "encabezado" "cuerpo" "contacto";
+  }
+}
+
+h1 {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #b433a3;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.h2footer {
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

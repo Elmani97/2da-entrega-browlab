@@ -1,0 +1,101 @@
+
+
+
+.cabeza {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.4fr;
+    grid-template-rows: auto;
+    width: 100%;
+
+    .logo {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        @include mobile {
+            display: flex;  
+            width: 100%;  
+            text-align: center;  
+            justify-content: center; 
+        }
+
+        @include minimobile{
+            display: flex;  
+            width: 100%;  
+            text-align: center;  
+            justify-content: center;  
+        }
+        
+        .imagen_logo {
+            width: 8rem;
+            }
+
+            @include tablet {  
+                display: flex;  
+                width: 100%;  
+                text-align: center;  
+                justify-content: center;  
+            }  
+            
+        
+        }
+    
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            grid-column: 2/3;
+
+            .lista-navbar {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                
+                }
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    text-decoration: none;
+                    border: solid black 0.1rem;
+                    padding: 0.5rem;
+                    color: #03060f;
+                    font-weight: bold;
+                    border-radius: 0.3rem;
+                    margin: 1rem;
+                    }
+
+                    &:hover {
+                        color: #f10f80;
+                        }
+            
+            }
+
+         @include tablet {
+            display: flex;  
+            flex-direction: column;  
+            text-align: center;  
+            justify-content: center; 
+         }
+        
+
+        @include mobile {
+            display: flex;  
+            flex-direction: column;  
+            text-align: center;  
+            justify-content: center;   
+        }
+
+        @include minimobile{
+            display: flex;  
+            flex-direction: column;  
+            text-align: center;  
+            justify-content: center;
+        }
+    }
+
+    
+

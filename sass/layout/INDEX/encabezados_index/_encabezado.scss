@@ -1,0 +1,31 @@
+
+
+
+.encabezado {
+    display: flex;
+    grid-area: encabezado;
+    background-color: #ff80ee;
+    grid-column: 1/4;
+    justify-content: center;
+    
+    @include tablet {
+        display: flex;  
+        flex-direction: column;  
+        text-align: center;  
+        justify-content: center;  
+    }
+    
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center; 
+    }
+
+    @include minimobile{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    }

@@ -1,0 +1,20 @@
+{
+  "name": "brow_lab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch sass/styles.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elmani97/2da-entrega-browlab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elmani97/2da-entrega-browlab/issues"
+  },
+  "homepage": "https://github.com/Elmani97/2da-entrega-browlab#readme",
+  "description": ""
+}
