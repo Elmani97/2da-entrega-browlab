@@ -141,7 +141,7 @@
             .testimonios__subtitulo{
                 @include mobile {
                     justify-content: center;  
-                    width: 100%;  
+                    width: 100%;
                 }
 
                 @include minimobile{
@@ -158,6 +158,7 @@
             @include tablet {
             justify-content: center;
             width: 100%;
+            text-align: start;
             }    
 
         } 
