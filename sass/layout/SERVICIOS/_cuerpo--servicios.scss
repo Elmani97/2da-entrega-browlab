@@ -12,7 +12,7 @@
         flex-direction: column;
         grid-row: 1/2;
         align-items: center;
-        background-color: #e0f7fa;
+        
     }
 
     .container_pasos{
@@ -28,12 +28,23 @@
             grid-column: 1/2;
             
             .pasos{
-                width: 18rem
-            }
+                @include tarjetservices (#faf3f3, 0.5rem);
+                width: 18rem;
+                align-items: center;
+                justify-content: center;
+                height: auto;
 
-            @include minimobile{
+                @include tablet{
+                    width: 80%;
+                }
+            }
+                
+
+            @include tablet{
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+
             }
         }
     }
@@ -52,35 +63,20 @@
 
             .pasos--precios{
                 width: 18rem;
+                height: auto;
 
                 @include tablet{
-                    width: 13rem;
+                    width: 80%;
                     
                 }
-
-                @include mobile{
-                    width: 100%;
-                    
-                }
-
-                
-               
                 
                 
             }
             
 
             .pasos1 {
-                background-color: #faf3f3;
-                height: 14rem;
-                box-shadow: 0.1rem 0.1rem #504d4d;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                padding: 0.5rem;
-                flex-direction: column;
-
+                @include tarjetservices (#faf3f3, 0.5rem);
+                    
             
                     button {
                     background-color: #e58f9c;
@@ -89,7 +85,6 @@
                     border-radius: 0.3rem;
                     width: 10rem;
                     height: 3rem;
-                    font-size: 1.2rem;
                     }
 
                     @include mobile {
@@ -108,6 +103,8 @@
 
             @include tablet{
                 grid-column: 1/2;
+                flex-direction: column;
+                align-items: center;
 
             }
 
@@ -137,9 +134,7 @@
         justify-content: center;  
         text-align: center;
 
-            .pasos{
-                width: 33.3% !important;
-            }
+            
                               
     }
 
@@ -152,16 +147,7 @@
         justify-content: center;  
         text-align: center;  
 
-        .pasos{
-            width: 33.3% !important;
-            height: auto !important;
-        }
-
-        .precios {
-            width: 33.3% !important;
-            height: auto !important;
-        }
-
+        
     }
 
     @include minimobile{
@@ -173,11 +159,7 @@
         justify-content: center;  
         text-align: center;  
 
-        .pasos{
-            width: 100% !important;
-            height: auto !important;
-         }
-                                  
+                                 
         } 
 }
 

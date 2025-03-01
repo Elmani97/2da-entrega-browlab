@@ -9,14 +9,18 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/main.css" />
     <title>BROW LAB</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="padre_index--sobre_nosotros">
-        <header class="encabezado" data-aos="fade-right" data-aos-duration="500">
+        <header
+          class="encabezado"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
           <div class="cabeza">
             <div class="logo">
               <img
@@ -36,16 +40,16 @@
         </header>
 
         <main class="container-fluid cuerpo--nosotros" data-aos="zoom-in">
-          <div class="container_secciones cont">
+          <article class="container_secciones cont">
             <h1>Conoce a nuestro equipo</h1>
             <p>
               En Brow Lab, cada cliente es tratado con el mayor cuidado y
               atención. Nos especializamos en el diseño de cejas, con un equipo
               apasionado por resaltar tu belleza natural.
             </p>
-          </div>
+          </article>
 
-          <div class="container_secciones cont--filosofia">
+          <article class="container_secciones cont--filosofia">
             <h2>Nuestra Filosofía</h2>
             <p>
               Creemos en un servicio personalizado y de calidad. Cada
@@ -53,18 +57,25 @@
               belleza única de cada persona. Trabajamos con los mejores
               productos y técnicas de última generación.
             </p>
-          </div>
+          </article>
 
-          <div class="container_secciones cont--fotoequipo">
-            <h2>Conoce a nuestro equipo</h2>
+          <section class="container_secciones cont--fotoequipo">
+            <h2>Nuestro Talento, Tu Confianza</h2>
             <p>
-              Creemos en un servicio personalizado y de calidad. Cada
-              tratamiento que realizamos es con el compromiso de realzar la
-              belleza única de cada persona. Trabajamos con los mejores
-              productos y técnicas de última generación.
+              En Brow Lab, nuestro equipo está compuesto por especialistas
+              apasionadas que combinan arte y técnica para resaltar tu belleza
+              natural. Cada una de ellas cuenta con amplia experiencia en el
+              diseño de cejas, pestañas y cuidado facial, garantizando
+              resultados impecables y un servicio de primer nivel. ¡Conócelas y
+              descubre por qué somos tu mejor opción!
             </p>
             <div class="imagenes_equipos">
-              <div class="card card-equipo" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+              <div
+                class="card card-equipo"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000"
+              >
                 <img
                   src="../images/Judith-Juanin.webp"
                   class="card-img-top"
@@ -78,7 +89,12 @@
                 </div>
               </div>
 
-              <div class="card card-equipo" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+              <div
+                class="card card-equipo"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000"
+              >
                 <img
                   src="../images/Bidane-Murillo.webp"
                   class="card-img-top"
@@ -93,7 +109,12 @@
                 </div>
               </div>
 
-              <div class="card card-equipo" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+              <div
+                class="card card-equipo"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000"
+              >
                 <img
                   src="../images/Naiara-Rodriguez.webp"
                   class="card-img-top"
@@ -108,9 +129,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div class="container_secciones cont--beneficios">
+          <section class="container_secciones cont--beneficios">
             <h2>¿Por qué elegirnos?</h2>
             <ul>
               <li><p>Atención personalizada y profesional</p></li>
@@ -118,20 +139,28 @@
               <li><p>Experiencia y dedicación en cada tratamiento</p></li>
               <li><p>Ambiente relajante y acogedor</p></li>
             </ul>
-          </div>
+          </section>
         </main>
         <footer class="contacto">
           <h2 class="h2footer">¿Lista para lucir unas cejas perfectas?</h2>
           <h3>¡Reserva Ya!</h3>
-          <p>Contáctanos: 📞 123-456-7890 | 📧 info@browlab.com</p>
+          <p class="pcontact">Contáctanos: 📞 123-456-7890 | 📧 info@browlab.com</p>
         </footer>
       </div>
     </div>
-     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
-  AOS.init();
-</script>
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

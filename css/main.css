@@ -1,5 +1,8 @@
 /*RESET*/
 /*reset*/
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +10,38 @@
 }
 
 /*utlilities*/
+h1, h2, h3 {
+  font-family: "Playball", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(180, 51, 163, 0.5529411765);
+}
+
+body, p, li, span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #333;
+}
+
+.testimonios__parrafo {
+  font-style: italic;
+  color: #3f3b3b;
+}
+
+.h2footer {
+  color: white;
+}
+
+.contacto h2, h3 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.pcontact {
+  color: white;
+}
+
 /* LAYOUT */
 /*contacto index*/
 .contacto {
@@ -124,14 +159,18 @@
     align-items: center;
   }
 }
+.cuerpo .card .card-img-top {
+  height: 10rem;
+}
 @media (max-width: 768px) {
   .cuerpo .card .card-img-top {
-    width: 8rem;
+    width: 9rem;
   }
 }
 @media (max-width: 576px) {
   .cuerpo .card .card-img-top {
-    width: 20rem;
+    width: 100%;
+    height: 12rem;
   }
 }
 .cuerpo .testimonios {
@@ -153,10 +192,6 @@
     justify-content: center;
     width: 100%;
   }
-}
-.cuerpo .testimonios .testimonios__parrafo {
-  font-style: italic;
-  color: #3f3b3b;
 }
 @media (max-width: 768px) {
   .cuerpo .testimonios {
@@ -258,7 +293,6 @@
   border: solid black 0.1rem;
   padding: 0.5rem;
   color: #03060f;
-  font-weight: bold;
   border-radius: 0.3rem;
   margin: 0.5rem;
 }
@@ -466,7 +500,6 @@
   flex-direction: column;
   grid-row: 1/2;
   align-items: center;
-  background-color: #e0f7fa;
 }
 .cuerpo--servicios .container_pasos {
   display: flex;
@@ -480,12 +513,30 @@
   grid-column: 1/2;
 }
 .cuerpo--servicios .container_pasos .tarjetas_pasos .pasos {
+  background-color: #faf3f3;
+  height: auto;
+  box-shadow: 0.1rem 0.1rem #504d4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+  flex-direction: column;
   width: 18rem;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .cuerpo--servicios .container_pasos .tarjetas_pasos .pasos {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
   .cuerpo--servicios .container_pasos .tarjetas_pasos {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 .cuerpo--servicios .container_pasos--dos {
@@ -501,20 +552,16 @@
 }
 .cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos .pasos--precios {
   width: 18rem;
+  height: auto;
 }
 @media (max-width: 768px) {
   .cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos .pasos--precios {
-    width: 13rem;
-  }
-}
-@media (max-width: 576px) {
-  .cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos .pasos--precios {
-    width: 100%;
+    width: 80%;
   }
 }
 .cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos .pasos1 {
   background-color: #faf3f3;
-  height: 14rem;
+  height: auto;
   box-shadow: 0.1rem 0.1rem #504d4d;
   display: flex;
   align-items: center;
@@ -530,7 +577,6 @@
   border-radius: 0.3rem;
   width: 10rem;
   height: 3rem;
-  font-size: 1.2rem;
 }
 @media (max-width: 576px) {
   .cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos .pasos1 {
@@ -549,6 +595,8 @@
 @media (max-width: 768px) {
   .cuerpo--servicios .container_pasos--dos .tarjetas_pasos--dos {
     grid-column: 1/2;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 576px) {
@@ -572,9 +620,6 @@
     justify-content: center;
     text-align: center;
   }
-  .cuerpo--servicios .pasos {
-    width: 33.3% !important;
-  }
 }
 @media (max-width: 576px) {
   .cuerpo--servicios {
@@ -586,14 +631,6 @@
     justify-content: center;
     text-align: center;
   }
-  .cuerpo--servicios .pasos {
-    width: 33.3% !important;
-    height: auto !important;
-  }
-  .cuerpo--servicios .precios {
-    width: 33.3% !important;
-    height: auto !important;
-  }
 }
 @media (max-width: 480px) {
   .cuerpo--servicios {
@@ -604,10 +641,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
-  .cuerpo--servicios .pasos {
-    width: 100% !important;
-    height: auto !important;
   }
 }
 
@@ -625,28 +658,6 @@
     grid-template-rows: 1fr auto 1fr;
     grid-template-areas: "encabezado" "cuerpo" "contacto";
   }
-}
-
-h1 {
-  font-family: "Georgia", serif;
-  font-style: italic;
-  font-weight: bold;
-}
-
-h2 {
-  font-family: "Georgia", serif;
-  font-style: italic;
-  font-weight: bold;
-  color: rgba(180, 51, 163, 0.5529411765);
-}
-
-.card-title {
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-.h2footer {
-  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
