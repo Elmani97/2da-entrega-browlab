@@ -162,6 +162,7 @@
   .cuerpo .testimonios {
     justify-content: center;
     width: 100%;
+    text-align: start;
   }
 }
 @media (max-width: 768px) {
@@ -292,7 +293,7 @@
 .encabezado {
   display: flex;
   grid-area: encabezado;
-  background-color: #ff80ee;
+  background-color: rgba(180, 51, 163, 0.5529411765);
   grid-column: 1/4;
   justify-content: center;
 }
@@ -628,7 +629,7 @@ h2 {
   font-family: "Georgia", serif;
   font-style: italic;
   font-weight: bold;
-  color: #b433a3;
+  color: rgba(180, 51, 163, 0.5529411765);
 }
 
 .card-title {

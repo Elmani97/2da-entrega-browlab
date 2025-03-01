@@ -4,7 +4,7 @@
 .encabezado {
     display: flex;
     grid-area: encabezado;
-    background-color: #ff80ee;
+    background-color: map-get($text-colors, rosi);
     grid-column: 1/4;
     justify-content: center;
     
