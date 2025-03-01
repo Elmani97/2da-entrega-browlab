@@ -34,13 +34,21 @@
 
         .imagenes_equipos{
             display: flex;
-
+            
             .card-equipo{
                 width: 18rem;
+
+                @include tablet {
+                    width: 60%;
+                }
             }
 
             @include tablet {
                 width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
             }
             
         }

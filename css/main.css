@@ -386,8 +386,16 @@
   width: 18rem;
 }
 @media (max-width: 768px) {
+  .cuerpo--nosotros .cont--fotoequipo .imagenes_equipos .card-equipo {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
   .cuerpo--nosotros .cont--fotoequipo .imagenes_equipos {
     width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 768px) {
