@@ -3,7 +3,7 @@
 .contacto {
     display: grid;
     grid-area: contacto;
-    background-color: #2c3e50;
+    background-color: #000000e4;
     color: white;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.4fr;
@@ -27,6 +27,11 @@
         grid-column: 2/3;
         grid-row: 1/2;
         margin-bottom: 0;
+        font-size: 1rem;
+
+        @include mobile{
+            font-size: 0.8rem;
+        }
         
     }
     .iconss{
