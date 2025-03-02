@@ -9,7 +9,7 @@ h1, h2, h3 {
 
 }
 
-body, p, li, span {
+body, p, li, span, h5 {
     font-family: 'Poppins', sans-serif;
     font-weight:500;
     font-style: normal;
@@ -34,4 +34,8 @@ body, p, li, span {
 .pcontact{
     color:map-get($text-colors, blanco);
     grid-column: 2/3;
+}
+
+h5{
+  font-size: 1rem;  
 }
