@@ -329,8 +329,10 @@ body, p, li, span {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin-bottom: 0;
+  padding-left: 0;
 }
-.cabeza nav a {
+.cabeza nav .lista-navbar a {
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -340,8 +342,28 @@ body, p, li, span {
   border-radius: 0.3rem;
   margin: 0.5rem;
 }
-.cabeza nav:hover {
+.cabeza nav .lista-navbar a:hover {
   color: #f10f80;
+}
+.cabeza nav .buscador {
+  display: flex;
+  grid-column: 3/4;
+  align-items: center;
+  justify-content: center;
+}
+.cabeza nav .buscador .btn-outline-success {
+  color: black;
+  border-color: black;
+}
+@media (max-width: 768px) {
+  .cabeza nav .buscador {
+    padding: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .cabeza nav {
+    flex-direction: column;
+  }
 }
 @media (max-width: 768px) {
   .cabeza {
