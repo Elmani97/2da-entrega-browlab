@@ -1,41 +1,39 @@
 .padre_index {
-    display: grid;
-    background-color: #faf3f3;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto 1.5fr;
-    grid-template-areas:
+  display: grid;
+  background-color: #faf3f3;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto 1.5fr;
+  grid-template-areas:
     "encabezado encabezado encabezado"
     "cuerpo cuerpo cuerpo"
     "contacto contacto contacto";
 
-    @include tablet {
-        grid-template-columns: 1fr;  
-        grid-template-rows: 1fr auto auto;  
-        grid-template-areas:   
-                "encabezado"  
-                "cuerpo"                  
-                "contacto";
-    }
+  @include tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas:
+      "encabezado"
+      "cuerpo"
+      "contacto";
+  }
 
-    @include mobile {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto auto;
-        grid-template-areas:
+  @include mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas:
+      "encabezado"
+      "cuerpo"
+      "contacto";
+  }
+
+  @include minimobile {
+    .padre_index {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto auto;
+      grid-template-areas:
         "encabezado"
         "cuerpo"
         "contacto";
     }
-
-    @include minimobile {
-        .padre_index{
-            
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr auto auto;
-            grid-template-areas:
-            "encabezado"
-            "cuerpo"
-            "contacto";
-        }
-    }
-
-    }
+  }
+}

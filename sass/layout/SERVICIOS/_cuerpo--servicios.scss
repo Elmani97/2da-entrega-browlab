@@ -1,166 +1,136 @@
-
-
 .cuerpo--servicios {
-    display: grid;
+  display: grid;
+  grid-area: cuerpo;
+  background-color: #faf3f3;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+
+  .container_titulo {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1/2;
+    align-items: center;
+  }
+
+  .container_pasos {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/3;
+    align-items: center;
+    text-align: center;
+
+    .tarjetas_pasos {
+      display: flex;
+      grid-column: 1/2;
+
+      .pasos {
+        @include tarjetservices(#faf3f3, 0.5rem);
+        width: 18rem;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+
+        @include tablet {
+          width: 80%;
+        }
+      }
+
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  .container_pasos--dos {
+    display: flex;
+    flex-direction: column;
+    grid-row: 3/4;
+    align-items: center;
+    text-align: center;
+
+    .tarjetas_pasos--dos {
+      display: flex;
+      grid-column: 1/2;
+
+      .pasos--precios {
+        width: 18rem;
+        height: auto;
+
+        @include tablet {
+          width: 80%;
+        }
+      }
+
+      .pasos1 {
+        @include tarjetservices(#faf3f3, 0.5rem);
+
+        button {
+          background-color: #e58f9c;
+          color: rgb(248, 244, 244);
+          border: solid #756d6d 0.1rem;
+          border-radius: 0.3rem;
+          width: 10rem;
+          height: 3rem;
+        }
+
+        @include mobile {
+          display: flex;
+          text-align: center;
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        @include tablet {
+          width: auto;
+          height: auto;
+        }
+      }
+
+      @include tablet {
+        grid-column: 1/2;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+    @include tablet {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  @include tablet {
+    display: flex;
     grid-area: cuerpo;
     background-color: #faf3f3;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-    .container_titulo {
-        display: flex;
-        flex-direction: column;
-        grid-row: 1/2;
-        align-items: center;
-        
-    }
+  @include mobile {
+    display: flex;
+    grid-area: cuerpo;
+    background-color: #faf3f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-    .container_pasos{
-        display: flex;
-        flex-direction: column;
-        grid-row: 2/3;
-        align-items: center;
-        text-align: center;
-        
-    
-        .tarjetas_pasos{
-            display: flex;
-            grid-column: 1/2;
-            
-            .pasos{
-                @include tarjetservices (#faf3f3, 0.5rem);
-                width: 18rem;
-                align-items: center;
-                justify-content: center;
-                height: auto;
-
-                @include tablet{
-                    width: 80%;
-                }
-            }
-                
-
-            @include tablet{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-            }
-        }
-    }
-
-    .container_pasos--dos {
-        display: flex;
-        flex-direction: column;
-        grid-row: 3/4;
-        align-items: center;
-        text-align: center;
-
-        .tarjetas_pasos--dos{
-            display: flex;
-            grid-column: 1/2;
-
-
-            .pasos--precios{
-                width: 18rem;
-                height: auto;
-
-                @include tablet{
-                    width: 80%;
-                    
-                }
-                
-                
-            }
-            
-
-            .pasos1 {
-                @include tarjetservices (#faf3f3, 0.5rem);
-                    
-            
-                    button {
-                    background-color: #e58f9c;
-                    color: rgb(248, 244, 244);
-                    border: solid #756d6d 0.1rem;
-                    border-radius: 0.3rem;
-                    width: 10rem;
-                    height: 3rem;
-                    }
-
-                    @include mobile {
-                    display: flex;
-                    text-align: center;
-                    width: 100% !important;
-                    height: auto !important;
-                    }
-
-                    @include tablet{
-                        width: auto;
-                        height: auto;
-                    }
-        
-            }
-
-            @include tablet{
-                grid-column: 1/2;
-                flex-direction: column;
-                align-items: center;
-
-            }
-
-            @include mobile{
-                flex-direction: column;
-                
-            }
-
-            
-        }
-        @include tablet {
-            width: auto;
-            height: auto;
-        }
-
-        
-    }
-
-
-    @include tablet {
-         
-        display: flex;  
-        grid-area: cuerpo;  
-        background-color: #faf3f3;  
-        flex-direction: column;  
-        align-items: center;  
-        justify-content: center;  
-        text-align: center;
-
-            
-                              
-    }
-
-    @include mobile {
-        display: flex;  
-        grid-area: cuerpo;  
-        background-color: #faf3f3;  
-        flex-direction: column;  
-        align-items: center;  
-        justify-content: center;  
-        text-align: center;  
-
-        
-    }
-
-    @include minimobile{
-        display: flex;  
-        grid-area: cuerpo;  
-        background-color: #faf3f3;  
-        flex-direction: column;  
-        align-items: center;  
-        justify-content: center;  
-        text-align: center;  
-
-                                 
-        } 
+  @include minimobile {
+    display: flex;
+    grid-area: cuerpo;
+    background-color: #faf3f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
-
-

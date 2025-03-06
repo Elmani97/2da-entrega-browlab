@@ -73,18 +73,18 @@
       align-items: center;
       justify-content: center;
 
-      .btn-outline-success{
-        color: map-get($text-colors ,negro);
-        border-color: map-get($text-colors ,negro);
+      .btn-outline-success {
+        color: map-get($text-colors, negro);
+        border-color: map-get($text-colors, negro);
       }
 
-      @include tablet{
+      @include tablet {
         padding: 1rem;
       }
     }
 
-    @include tablet{
-        flex-direction: column;
+    @include tablet {
+      flex-direction: column;
     }
   }
 

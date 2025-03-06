@@ -1,108 +1,96 @@
-
-
-
 .cuerpo--nosotros {
-    display: grid;
-    grid-area: cuerpo;
-    background-color: #faf3f3;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    height: 100%;
+  display: grid;
+  grid-area: cuerpo;
+  background-color: #faf3f3;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  height: 100%;
 
-    .container_secciones{
-        display: flex;
-        grid-row: 1/2;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        
-    }
+  .container_secciones {
+    display: flex;
+    grid-row: 1/2;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .cont--filosofia{
-        display: flex;
-        grid-row: 2/3;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .cont--filosofia {
+    display: flex;
+    grid-row: 2/3;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .cont--fotoequipo {
-        display: flex;
-        flex-direction: column;
-        grid-row: 3/4;
-        align-items: center;
+  .cont--fotoequipo {
+    display: flex;
+    flex-direction: column;
+    grid-row: 3/4;
+    align-items: center;
 
-        .imagenes_equipos{
-            display: flex;
-            
-            .card-equipo{
-                width: 18rem;
+    .imagenes_equipos {
+      display: flex;
 
-                @include tablet {
-                    width: 60%;
-                }
-            }
-
-            @include tablet {
-                width: 100%;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-            }
-            
-        }
+      .card-equipo {
+        width: 18rem;
 
         @include tablet {
-            width: 100%;
+          width: 60%;
         }
-    
-    }
+      }
 
-    .cont--beneficios{
-        display: flex;
-        grid-row: 4/5;
-        justify-content: center;
+      @include tablet {
+        width: 100%;
         flex-direction: column;
-       align-items: center;
-        text-align: start;
-        
-        .cont--beneficios ul{
-            
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-
-            .cont--beneficios ul li{
-                margin: 1rem;
-                
-            }
-
-            @include minimobile{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: start;
-            }
-        }
-
-        @include minimobile{
-            margin: 1rem;
-        }
-       
+        justify-content: center;
+        align-items: center;
+      }
     }
 
-    @include tablet{
-        display: flex;  
-        grid-area: cuerpo;  
-        background-color: #faf3f3;  
-        flex-direction: column;  
-        align-items: center;  
-        justify-content: center;  
-        text-align: center;
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  .cont--beneficios {
+    display: flex;
+    grid-row: 4/5;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+
+    .cont--beneficios ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+
+      .cont--beneficios ul li {
+        margin: 1rem;
+      }
+
+      @include minimobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+      }
     }
 
-    
+    @include minimobile {
+      margin: 1rem;
     }
+  }
+
+  @include tablet {
+    display: flex;
+    grid-area: cuerpo;
+    background-color: #faf3f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
