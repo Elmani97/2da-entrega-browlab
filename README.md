@@ -8,6 +8,7 @@ Brow Lab es un sitio web especializado en el embellecimiento y diseño de cejas.
 
 📂 Brow_Lab/
 
+```
 ├── index.html                # Página principal
 ├── pages/                    # Páginas adicionales
 │   ├── servicios.html        # Página de Servicios
