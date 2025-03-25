@@ -37,3 +37,37 @@
     }
   }
 }
+
+//PADRE SERVICIOS//
+
+.padre_index--servicio {
+  @include tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "encabezado"
+      "cuerpo"
+      "contacto";
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas:
+      "encabezado"
+      "cuerpo"
+      "contacto";
+  }
+}
+
+//PADRE NOSOTROS//
+.padre_index--sobre_nosotros {
+  @include tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "encabezado"
+      "cuerpo"
+      "contacto";
+  }
+}
